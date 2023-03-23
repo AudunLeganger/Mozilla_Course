@@ -1,9 +1,12 @@
 html {
   font-family: Arial;
+  align-content: center;
 }
 
 body {
   border: 2px solid black;
+  max-width: 1000px;
+  margin: auto;
 }
 
 p {
