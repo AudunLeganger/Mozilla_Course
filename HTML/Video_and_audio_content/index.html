@@ -13,8 +13,15 @@
     <div id="flexParent">
       <div class="mediaField">
         <div class="centeredElement">
-          <video id="rabbitVid" controls autoplay loop>
+          <video id="rabbitVid" controls loop poster="./video/poster.png">
             <source src="./video/rabbit320.mp4" type="video/mp4" />
+            <track
+              kind="descriptions"
+              src="./video/captions.vtt"
+              srclang="en"
+              label="English"
+              default
+            />
           </video>
         </div>
         <div class="centeredElement">
