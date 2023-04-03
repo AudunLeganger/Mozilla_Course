@@ -19,10 +19,10 @@ h2 {
 }
 
 ul {
-    margin: 0 auto;
-    background: linear-gradient(45deg, red, blue);
-    border: 5px solid purple;
-    padding: 20px 50px;
+  margin: 0 auto;
+  background: linear-gradient(45deg, red, blue);
+  border: 5px solid purple;
+  padding: 20px 50px;
 }
 
 .job-title {
@@ -39,9 +39,3 @@ a:hover {
   text-decoration: none;
   color: green;
 }
-
-/* 
-/* p {
-/*   color: red;
-/* }
-/* 
