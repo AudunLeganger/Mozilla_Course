@@ -7,14 +7,22 @@ body {
 }
 
 h1 {
-  color: #375e97;
+  color: hotpink;
   font-size: 2em;
   font-family: Georgia, "Times New Roman", Times, serif;
-  border-bottom: 1px solid #375e97;
+  border-bottom: 10px dotted purple;
 }
 
 h2 {
   font-size: 1.5em;
+  font-style: italic;
+}
+
+ul {
+    margin: 0 auto;
+    background: linear-gradient(45deg, red, blue);
+    border: 5px solid purple;
+    padding: 20px 50px;
 }
 
 .job-title {
@@ -29,4 +37,11 @@ a:visited {
 
 a:hover {
   text-decoration: none;
+  color: green;
 }
+
+/* 
+/* p {
+/*   color: red;
+/* }
+/* 
