@@ -1,0 +1,27 @@
+html {
+  font-family: sans-serif;
+}
+
+p {
+  width: 200px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  /* Root font size: 16px. Increase to 18px => increase by 2px => 18/16 = 9/8 =  1.125*/
+  font-size: 1.125rem;
+  background-color: rgb(102, 51, 153);
+  color: lightskyblue;
+  text-shadow: 1px 1px 1px black;
+  border-radius: 10px;
+  border: 1px solid rgb(70, 34, 105);
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(0, 0, 0, 0),
+    rgb(0, 0, 0, 0.2) 30%
+  );
+  box-shadow: 1px 1px 5px black, inset 1px 1px 2px rgb(255, 255, 255, 125),
+    inset -1px -1px 2px rgb(0, 0, 0, 125);
+}

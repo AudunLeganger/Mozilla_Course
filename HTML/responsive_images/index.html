@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Here is a picture of a place called Tomter</h1>
+    <!--
+    <picture>
+      <source
+        media="(max-width: 799px)"
+        srcset="./images/tomter-crop-480.jpg"
+      />
+      <img
+        src="./images/tomter-1080.jpeg"
+        alt="Aerial view of Tomter during sunset"
+      />
+    
+    </picture>
+    -->
+    <img
+      srcset=".images/tomter-crop-480.jpg 480w, images/tomter-1080.jpeg 1080w"
+      sizes="(max-width. 600px) 480px, 1080px"
+      src="./images/tomter-1080.jpeg"
+    />
+  </body>
+</html>
