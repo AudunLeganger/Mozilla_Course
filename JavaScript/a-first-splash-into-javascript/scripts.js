@@ -37,6 +37,12 @@ let guessCount = 1;
 let resetButton;
 
 guessSubmit.addEventListener("click", checkGuess);
+guessField.addEventListener("keyup", function (event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    checkGuess();
+  }
+});
 
 function checkGuess() {
   const userGuess = Number(guessField.value);
