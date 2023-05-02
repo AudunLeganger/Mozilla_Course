@@ -51,6 +51,21 @@
         });
         input.focus();
       });
+
+      input.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+          btn.click();
+        }
+      });
+
+      window.addEventListener("keydown", (e) => {
+        if (e.key === "Delete") {
+          const elm = document.querySelector("li");
+          if (elm) {
+            elm.remove();
+          }
+        }
+      });
     </script>
   </body>
 </html>
