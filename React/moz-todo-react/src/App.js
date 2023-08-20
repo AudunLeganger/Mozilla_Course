@@ -1,3 +1,5 @@
+import Todo from "./components/Todo";
+
 function App(props) {
   return (
     <div className="todoapp stack-large">
@@ -42,54 +44,9 @@ function App(props) {
         className="todo-list stack-large stack-exception"
         aria-labelledby="list-heading"
       >
-        <li className="todo stack-small">
-          <div className="c-cb">
-            <input type="checkbox" id="todo-0" defaultChecked={true} />
-            <label className="todo-label" htmlFor="todo-0">
-              Eat
-            </label>
-          </div>
-          <div className="btn-group">
-            <button type="button" className="btn">
-              Edit <span className="visually-hidden">Eat</span>
-            </button>
-            <button type="button" className="btn btn__danger">
-              Delete <span className="visually-hidden">Eat</span>
-            </button>
-          </div>
-        </li>
-        <li className="todo stack-small">
-          <div className="c-cb">
-            <input type="checkbox" id="todo-1" />
-            <label htmlFor="todo-1" className="todo-label">
-              Sleep
-            </label>
-          </div>
-          <div className="btn-group">
-            <button type="button" className="btn">
-              Edit <span className="visually-hidden">Sleep</span>
-            </button>
-            <button type="button" className="btn btn__danger">
-              Delete <span className="visually-hidden">Sleep</span>
-            </button>
-          </div>
-        </li>
-        <li className="todo stack-small">
-          <div className="c-cb">
-            <input type="checkbox" id="todo-2" />
-            <label htmlFor="todo-2" className="todo-label">
-              Repeat
-            </label>
-          </div>
-          <div className="btn-group">
-            <button type="button" className="btn">
-              Edit <span className="visually-hidden">Repeat</span>
-            </button>
-            <button type="button" className="btn btn__danger">
-              Delete <span className="visually-hidden">Repeat</span>
-            </button>
-          </div>
-        </li>
+        <Todo name="Eat" completed={true} />
+        <Todo name="Sleep" completed={false} />
+        <Todo name="Repeat" completed={false} />
       </ul>
     </div>
   );
