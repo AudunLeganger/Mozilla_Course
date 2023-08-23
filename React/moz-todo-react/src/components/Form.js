@@ -9,7 +9,14 @@ function Form(props) {
 
   function handleSubmit(e) {
     e.preventDefault();
-    props.addTask("Say hello!");
+
+    if (name.trim() === "") {
+      alert("Error: Can't submit empty string");
+      setName("");
+      return;
+    }
+    props.addTask(name.trim());
+    setName("");
   }
 
   return (
